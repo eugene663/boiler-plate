@@ -11,38 +11,38 @@
 ####    Body-parser : Body 데이터를 분석해서 req.body로 출력한다.
 ####    POST MAN : client 없는 상태에서 request를 보내기 위해 사용한다. POST MAN을 통해 Register Route에 request를 보낸다.
 ####    NODE MON : 소스를 변경할 때 자동으로 반영하고 서버를 재시작해 준다.    
-
+<br/>
 
 #### 2) 비밀번호 암호화
 ####    Bycrpt 이용 : bcrypt사이트를 보며 진행한다. salt를 통해 암호화된 비밀번호를 만든다. 비밀번호를 바꿀 때만 작동하도록 한다.     
-
+<br/>
 
 #### 3) 로그인
 ####    login route 생성 -> User.findOne()을 통해 DB에서 요청한 이메일 찾고 같은지 확인 -> Bcrypt를 이용하여 plain 비밀번호와 암호화된 비밀번호가 같은지 확인 -> 이메일과 비밀번호가 모두 같다면 token을 생성하고 cookie에 저장    
-
+<br/>
 
 #### 4) Auth
 ####    페이지 이동 시 로그인 여부, 관리자 유저인지 확인한다.
 ####    cookie에 저장해 둔 token을 server로 부터 가져와서 복호화 -> user id를 얻고 DB에서 유저를 찾고 token과 유저와 비교한다.
 ####    쿠키와 같다면 Authentication True, 일치하지 않으면 False    
-
+<br/>
 
 #### 5) 로그아웃
 ####    로그아웃 route를 만들고 DB에서 유저를 찾아 토큰을 지워준다.     
-
+<br/><br/>
 
 ### React JS. 프론트엔드(client)
 #### 1) axios
 ####    sever에서 client없이 사용했던 POSTMAN을 사용하지 않아도 된다. React JS 부분에서 request를 보낼 수 있다.        
-
+<br/>
 
 #### 2) CSS Framework
 ####    Ant Design 사용      
-
+<br/>
 
 #### 3) Redux
 #### JS app들을 위한 state 관리 라이브러리이다. state는 변하는 데이터를 다룰 때 사용한다.      
-
+<br/>
 
 #### 4) React Hooks
 ####    functional component 에서도 class 기능을 다 쓸 수 있다.      
